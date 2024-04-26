@@ -1,14 +1,27 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const nameSurname = "Furkan Soylu";
+  const students    = 44000;
+  const trueOrnot   = true;
+  const date        = "date"
+  const url         = "https://picsum.photos/200/300"
 
   return (
     <div className="App">
-        Starting React Project 
+        <h1>Starting React Project</h1>
+        <p>İsim Soyisim : { nameSurname }</p> 
+        <p>{ students }</p>
+        { trueOrnot ?  <div>İsim Soyisim : { nameSurname }</div> : <p>{ students }</p> }
+        <input type= { date } />
+        <div>
+          <img src={ url } alt="picsum" />
+        </div>
+        <div className="box" style={{backgroundColor:"darkblue"}}>
+
+        </div>
     </div>
   )
 }
