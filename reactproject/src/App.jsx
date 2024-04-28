@@ -1,27 +1,27 @@
 import { useState } from 'react'
 import './App.css'
+import Course from './Course';
 
 function App() {
-  const [count, setCount] = useState(0);
-  const nameSurname = "Furkan Soylu";
-  const students    = 44000;
-  const trueOrnot   = true;
-  const date        = "date"
-  const url         = "https://picsum.photos/200/300"
 
   return (
     <div className="App">
-        <h1>Starting React Project</h1>
-        <p>İsim Soyisim : { nameSurname }</p> 
-        <p>{ students }</p>
-        { trueOrnot ?  <div>İsim Soyisim : { nameSurname }</div> : <p>{ students }</p> }
-        <input type= { date } />
-        <div>
-          <img src={ url } alt="picsum" />
-        </div>
-        <div className="box" style={{backgroundColor:"darkblue"}}>
-
-        </div>
+      <Course 
+      title="Angular" 
+      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis vel ullam accusamus laborum, corrupti praesentium culpa aut possimus maiores sed dolorem velit modi nesciunt maxime voluptatibus doloribus amet at."
+      />
+      <Course 
+      title="Javascript" 
+      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis vel ullam accusamus laborum, corrupti praesentium culpa aut possimus maiores sed dolorem velit modi nesciunt maxime voluptatibus doloribus amet at."
+      />
+      <Course 
+      title="Html" 
+      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis vel ullam accusamus laborum, corrupti praesentium culpa aut possimus maiores sed dolorem velit modi nesciunt maxime voluptatibus doloribus amet at."
+      />
+      <Course 
+      title="Css" 
+      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis vel ullam accusamus laborum, corrupti praesentium culpa aut possimus maiores sed dolorem velit modi nesciunt maxime voluptatibus doloribus amet at."
+      />
     </div>
   )
 }
