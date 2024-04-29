@@ -18,13 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={ handleClick } >Add Course</button>
-      {/* {
-        courses.map((course,index) => {
-          <Course key={ index } courseName={ course } />
-        })
-      } */}
-      <div>{ courseList }</div>
+      <button className='appButton' onClick={ handleClick } >Add Course</button>
+      <div className='courseList'>{ courseList }</div>
     </div>
   )
 }
