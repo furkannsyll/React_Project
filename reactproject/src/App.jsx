@@ -9,27 +9,47 @@ function App() {
 
   return (
     <div className="App">
-      <Course 
-      image={ Angular }
-      title="Angular" 
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis vel ullam accusamus laborum, corrupti praesentium culpa aut possimus maiores sed dolorem velit modi nesciunt maxime voluptatibus doloribus amet at."
-      />
-      <Course 
-      image={ Kompleweb }
-      title="All Web Development" 
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis vel ullam accusamus laborum, corrupti praesentium culpa aut possimus maiores sed dolorem velit modi nesciunt maxime voluptatibus doloribus amet at."
-      />
-      <Course 
-      image={ Bootstrap5 }
-      title="Bootstrap5" 
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis vel ullam accusamus laborum, corrupti praesentium culpa aut possimus maiores sed dolorem velit modi nesciunt maxime voluptatibus doloribus amet at."
-      />
-      <Course 
-      image={ Csharp }
-      title="C & CSharp" 
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis vel ullam accusamus laborum, corrupti praesentium culpa aut possimus maiores sed dolorem velit modi nesciunt maxime voluptatibus doloribus amet at."
-      />
+      <section className="hero is-link">
+        <div className="hero-body">
+          <p className="title">Kurslarım</p>
+        </div>
+      </section>
+      <div className="container">
+        <section className="section">
+          <div className="columns">
+                <div className="column">
+                  <Course 
+                  image={ Angular }
+                  title="Angular" 
+                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis vel ullam accusamus laborum, corrupti praesentium culpa aut possimus maiores sed dolorem velit modi nesciunt maxime voluptatibus doloribus amet at."
+                  />
+                </div>
+                <div className="column">
+                  <Course 
+                  image={ Kompleweb }
+                  title="Web Dev" 
+                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis vel ullam accusamus laborum, corrupti praesentium culpa aut possimus maiores sed dolorem velit modi nesciunt maxime voluptatibus doloribus amet at."
+                  />
+                </div>
+                <div className="column">
+                  <Course 
+                  image={ Bootstrap5 }
+                  title="Bootstrap5" 
+                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis vel ullam accusamus laborum, corrupti praesentium culpa aut possimus maiores sed dolorem velit modi nesciunt maxime voluptatibus doloribus amet at."
+                  />
+                </div>
+                <div className="column">
+                  <Course 
+                  image={ Csharp }
+                  title="C & CSharp" 
+                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis vel ullam accusamus laborum, corrupti praesentium culpa aut possimus maiores sed dolorem velit modi nesciunt maxime voluptatibus doloribus amet at."
+                  />
+                </div>
+          </div>
+        </section>
+      </div>
     </div>
+
   )
 }
 
