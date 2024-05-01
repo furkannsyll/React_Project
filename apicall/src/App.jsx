@@ -1,13 +1,16 @@
-import { useState } from 'react'
 import './App.css'
 import SearchHeader from './SearchHeader'
+import searchImages from './Api'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const handleSubmit = (term) => {
+    searchImages(term);
+  }
 
   return (
     <div className="App">
-      <SearchHeader />
+      <SearchHeader search={ handleSubmit } />
     </div>
   )
 }
